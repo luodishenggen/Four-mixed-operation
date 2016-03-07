@@ -1,0 +1,63 @@
+import java.util.*;
+  class A1{
+ 
+  /*public static void main(String args[])****/
+  public void tell()//构造方法
+      {
+      //int i = 0;
+      //int a=0;
+       //int b=4;
+      //System.out.println("输入数字:");
+      //i = input.nextInt();
+     
+     {
+        
+         {
+             int a = 1+(int)(Math.random() * 100);//随机生成需要的数据
+             int b = 1+(int)(Math.random() * 100);
+              int i = 1+(int)(Math.random() * 4);
+             Scanner input = new Scanner(System.in);
+      
+            {
+ 
+            if(i == 1)
+                 {    double sum =  a + b;
+                     System.out.println( + a + "+" + b + "=" + sum);
+                 }
+           if(i == 2)
+                {  if(a<b)     {tell();}
+                  
+                    else{
+                       double sum =  a - b;
+                         System.out.println( + a + "-" + b + "=" + sum);}
+                         }
+           if(i == 3)
+             {
+                        double sum =  a * b;
+                        System.out.println( + a +"*" + b +"=" + sum);}
+            if(i == 4)
+              {           if(b==0)     {tell();}
+                          else {
+                             double sum =  a / b;
+                          System.out.println( + a + "/" + b+"=" + sum);}}
+              }
+           }
+       }
+     }
+ }
+ 
+ 
+ public class A11{
+     public static void main(String args[]){
+        /*System.out.println("输入数字:");
+         int z = 0;
+ Scanner s = new Scanner(System.in);
+        z =  s.nextInt();*/
+        for(int y = 1;y < 31;y ++)
+        {
+           A1 per = new A1();
+           System.out.println("第"+y+"道题");
+           per.tell();
+        }
+     }
+ }
